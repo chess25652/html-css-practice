@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 1em;
+	font-size: 175%;
+}
+
+#content {
+	margin: 0 1.5em;	
+}
+
+article {
+	border: 1px solid #000;
+	background: #9FB;
+	margin: 3em 1.5em;
+}
+
+.subtitle {
+	border: 1px solid #000;
+	font-size: 125%;
+	background: #5AB;
+	float: right;
+	padding: 5px;
+}
+
+.description {
+	clear: right;
+	margin: .5em;
+}
+
+.clear-all {
+	clear: both;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	article:nth-child(1), article:nth-child(2) {
+		float: left;
+		width: calc(50% - 3em);
+		
+	}
+	article:nth-child(3) {
+		clear: both;
+	}
+}
+
+@media (min-width: 992px) {
+	article {
+		float: left;
+		width: calc(33% - 3em);
+		
+	}
+}
